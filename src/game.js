@@ -3,6 +3,7 @@ const ctx = canvas.getContext('2d');
 const startButton = document.getElementById('start-button');
 const eatSound = document.getElementById('eat-sound');
 const gameOverSound = document.getElementById('game-over-sound');
+const loadingAnimation = document.getElementById('loading-animation');
 
 const GRID_SIZE = 20;
 const GAME_SPEED = 100; // milliseconds
@@ -18,6 +19,8 @@ function initGame() {
     updateScore(0);
     document.addEventListener('keydown', changeDirection);
     startButton.style.display = 'none';
+    loadingAnimation.style.display = 'none';
+    canvas.style.display = 'block';
     gameLoop = setInterval(update, GAME_SPEED);
 }
 
@@ -55,3 +58,7 @@ function gameOver() {
 }
 
 startButton.addEventListener('click', initGame);
+
+// Show loading animation and hide game board initially
+loadingAnimation.style.display = 'block';
+canvas.style.display = 'none';
