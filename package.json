@@ -1,0 +1,11 @@
+{
+  "name": "interactive-snake-game",
+  "version": "1.0.0",
+  "description": "An exciting and interactive implementation of the classic Snake game",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "open src/index.html"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Snake Game</h1>
+        <div id="instructions">
+            <p>Use arrow keys to control the snake. Eat food to grow and increase your score.</p>
+            <p>Avoid hitting the walls or yourself!</p>
+        </div>
+        <button id="start-button" class="btn">Start Game</button>
+        <canvas id="game-board"></canvas>
+        <div id="scoreboard"></div>
+    </div>
+    <audio id="eat-sound" src="assets/eat.mp3"></audio>
+    <audio id="game-over-sound" src="assets/gameover.mp3"></audio>
+    <script src="components/snake.js"></script>
+    <script src="components/food.js"></script>
+    <script src="components/scoreboard.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
